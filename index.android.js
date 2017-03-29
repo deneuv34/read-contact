@@ -18,13 +18,12 @@ import { ContactProvider } from './ContactModule';
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1!== r2})
 export default class ContactNativeModules extends Component {
   costructor() {
-    super();
     this.state = {
       data: ds.cloneWithRows([{name: 'Asbun', telp: '9128391'}, {name: 'Ascap', telp: '12381'}]),
     }
   }
 
-  
+
 
   render() {
     return (
